@@ -1,0 +1,64 @@
+{
+  "name": "protocall",
+  "version": "1.1.0",
+  "description": "A GraphQL client based on Create React App",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@aircall/tractor": "^1.20.0",
+    "@apollo/client": "^3.3.19",
+    "@apollo/react-hooks": "^4.0.0",
+    "@graphql-codegen/cli": "^1.21.5",
+    "@graphql-codegen/import-types-preset": "^1.18.2",
+    "@graphql-codegen/plugin-helpers": "^1.18.7",
+    "@graphql-codegen/typescript": "^1.22.1",
+    "@graphql-codegen/typescript-operations": "^1.18.0",
+    "@graphql-codegen/typescript-react-apollo": "^2.2.5",
+    "@testing-library/jest-dom": "^5.13.0",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^13.1.9",
+    "@types/jest": "^26.0.23",
+    "@types/node": "^15.12.1",
+    "@types/react": "^17.0.9",
+    "@types/react-dom": "^17.0.6",
+    "apollo-cache-inmemory": "^1.6.6",
+    "apollo-client": "^2.6.10",
+    "apollo-link": "^1.2.14",
+    "apollo-link-http": "^1.5.17",
+    "apollo-link-ws": "^1.0.20",
+    "apollo-utilities": "^1.3.4",
+    "caniuse-lite": "^1.0.30001346",
+    "graphql": "^15.8.0",
+    "graphql-let": "~0.18.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "styled-components": "^5.3.5",
+    "typescript": "^4.3.2"
+  },
+  "scripts": {
+    "start": "npm run codegen && react-scripts start",
+    "build": "npm run codegen && react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "codegen": "graphql-let --require dotenv/config"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
